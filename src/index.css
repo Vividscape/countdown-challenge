@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Heeader styling -------------------- */
+
+header .login {
+    clip-path: polygon(86px 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media screen and (max-width: 767px) {
+    header .login {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}

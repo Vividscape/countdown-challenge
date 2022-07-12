@@ -1,13 +1,9 @@
-import { ImFacebook, ImTwitter } from "react-icons/im";
-import { TiSocialGooglePlus, TiSocialYoutubeCircular } from "react-icons/ti";
-import { RiInstagramFill } from "react-icons/ri";
+import Header from "./components/Header"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>New React Project</h1>
-      </header>
+    <div className="App bg-black h-screen">
+      <Header />
     </div>
   );
 }
