@@ -72,3 +72,32 @@ header .login {
         font-size: 60px;
     }
 }
+
+/* Event Copy styling ----------------------------------- */
+
+.reveal-event h2 {
+    letter-spacing: .75rem;
+    color: #c23e26;
+}
+
+button {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reveal-event > div:first-child button {
+    background-image: url('../public/assets/button-background.png') !important;
+}
+
+.reveal-event > div:first-child button:hover {
+    color: #fff;
+}
+
+.reveal-event > div:last-child button {
+    background-image: url('../public/assets/button-background-grey.png') !important;
+}
+
+.reveal-event > div:last-child button:hover {
+    color: #c23e26;
+}
