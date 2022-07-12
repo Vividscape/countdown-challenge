@@ -1,4 +1,6 @@
-import './App.css';
+import { ImFacebook, ImTwitter } from "react-icons/im";
+import { TiSocialGooglePlus, TiSocialYoutubeCircular } from "react-icons/ti";
+import { RiInstagramFill } from "react-icons/ri";
 
 function App() {
   return (
