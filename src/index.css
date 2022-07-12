@@ -6,8 +6,9 @@ body {
     font-family: 'Fira Sans', sans-serif;
 }
 
-/* Heeader styling -------------------- */
+/* Header styling ----------------------------------- */
 
+/* login box */
 header .login {
     clip-path: polygon(86px 0, 100% 0, 100% 100%, 0% 100%);
 }
@@ -15,5 +16,59 @@ header .login {
 @media screen and (max-width: 767px) {
     header .login {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+/* Countdown styling ----------------------------------- */
+
+.show-counter {
+    font-family: 'Oswald', sans-serif;
+}
+
+.show-counter > div::after {
+    content:'';
+    background-image: url('../public/assets/rusty-line.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 4px;
+    display: inline-block;
+    text-align: center;
+}
+
+.show-counter p.colon, .countdown p {
+    line-height: 1;
+}
+
+.show-counter p.colon {
+    font-size: 130px;
+}
+
+.show-counter .countdown p {
+    font-size: 150px;
+}
+
+.show-counter .countdown span {
+    letter-spacing: .75rem;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .show-counter p.colon {
+        font-size: 100px;
+    }
+    
+    .show-counter .countdown p {
+        font-size: 120px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .show-counter p.colon {
+        font-size: 40px;
+    }
+    
+    .show-counter .countdown p {
+        font-size: 60px;
     }
 }
